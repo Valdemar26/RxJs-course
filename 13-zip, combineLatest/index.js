@@ -44,6 +44,6 @@ const t2$ = Rx.Observable.timer(2000, 2000);
 const t3$ = Rx.Observable.timer(3000, 2000);
 
 Rx.Observable
-  .combineLatest(t1$, t2$, t3$)
-  .take(5)
-  .subscribe(createSubscribe('combineLatest'));
+    .combineLatest(t1$, t2$, t3$)
+    .take(5)
+    .subscribe(createSubscribe('combineLatest'));
